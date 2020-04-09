@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>【蒲公英书海】登录</title>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<link rel="stylesheet" href="commonCss/footer.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/login.js" ></script>
+	</head>
+	<body>
+		<div id="login" class="t">
+			<div class="loginT t">
+				<div class="loginContent c">
+					<div class="loginContentLogo l">
+						<a href="index.html">
+							<img src="img/header/search_Logo1.png" />
+						</a>
+					</div>
+					<!--<span>欢迎注册</span>-->
+					<!--<div class="goLogin r">-->
+						<!--<p>已有账号？<a href="#">立即登录</a><em></em></p>-->
+					<!--</div>-->
+				</div>
+			</div>
+			<div class="BodyBg t l">
+				<div class="BgPicture t"></div>  <!-- 图片更换在login。css -->
+				<div class="bodyMiddle c">
+					<div class="bodyMain">
+						<div class="MainContent">
+							<em>登录蒲公英书海公益网</em>
+							<div class="input1 l">
+								<div class="userIcon leftIcon"></div>
+								<div class="user u1 l">
+									<div class="clear cl1"></div>
+									<input class="in1" id="loginName" type="text" placeholder="手机号/邮箱" />
+								</div>
+							</div>
+							<div class="input2 l">
+								<div class="pswordIcon leftIcon"></div>
+								<div class="user l">
+									<div class="clear cl2"></div>
+									<input class="in2" id="password" type="text" placeholder="密码" />
+								</div>
+							</div>
+							<div class="forgetpass l">
+								<p><a href="#">忘记密码？</a></p>
+							</div>
+							<!-- <div class="okLogin">登录</div> -->
+							<!-- 将登录换成一个可以点击的按钮 -->
+							<button type="button" class="okLogin" id="login">登录</button>
+							<div class="freeRegister l">
+								<div class="mixedLogin l">
+									<ul>
+										<li></li><li></li><li></li>
+									</ul>
+								</div>
+								<div class="rightArraw r"></div>
+								<p class="r">
+									还没有账号？<a href="register.html" class="red">免费注册</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="Footer"></footer>
+		<script>
+			$('footer').load("commonHtml/footer.html");
+		</script>
+		<script type="text/javascript">
+			oBtn = document.getElementById("login")
+			oYH = document.getElementById("loginName")
+			opassword = document.getElementById("password")
+			
+			//按钮绑定事件
+			oBtn.onclick = function()
+			{
+				//先判断格式
+				//1.先驱获得用户名和密码
+				var ipt_YH = oYH.value
+				var ipt_password = opassword.value
+				// console.log(ipt_YH , ipt_password)
+				//判断用户名是否为空
+				if(ipt_YH == ""){
+					// alert("输入的用户名或密码格式不正确 用户名：pgyshw 密码：123456")
+				return
+			}
+			    //判断密码是否为空
+				if(ipt_password == "")
+				{
+					// alert("输入的用户名或密码格式不正确 用户名：pgyshw 密码：123456")
+					return
+				}
+			    //判断用户名和密码是否正确
+		        if(ipt_YH === "pgyshw" && ipt_password === "123456")
+				{
+					// alert("登录成功")
+					// setTimeout(function(){location.href="https://cggzs.cn/";},2000);
+					// window.location = 'https://cggzs.cn/'
+					window.location = 'index.html'
+				}
+				else
+				{
+					alert("输入的用户名或密码错误 用户名：pgyshw 密码：123456")
+				}
+			
+			}
+		</script>
+	</body>
+</html>
