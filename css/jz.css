@@ -1,0 +1,14 @@
+.box-input{
+	width: 300px;
+	height: 60px;
+}
+.box-input uploadPhoto{
+	width: 100px;
+	height: 60px;
+}
+#submit
+{
+	position: absolute;
+	left: 0;
+	top: 600px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>图书捐赠</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="commonCss/footer.css" />
+    <link rel="stylesheet" href="commonCss/header.css"/>
+    <link rel="stylesheet" href="commonCss/FixedRight.css" />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/component.css">
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript" src="js/brand.js" ></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+	<link rel="stylesheet" type="text/css" href="css/jz.css"/>
+	<style type="text/css">
+		body{
+			background-image: url(img/jz/jz-bj.jpg);
+			background-repate:no-repate;
+			background-size:cover;
+			background-attachment: fixed;
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<!--公共头-->
+	</header>
+	<!-- 页面顶上的头标签 -->
+	<div id="headTop" class="t">
+		<div id="topContent" class="c">
+			<span class="topContentLeft l">
+				<span class="a1">欢迎来到蒲公英书海</span>
+				<a class="pleaseLogin" href="#">184****2829</a>
+				<em></em>
+				<li></li>
+				<a class="pleaseregister" href="index.html">退出</a>
+			</span>
+			<span class="topContentRight r">
+				<span>
+					<span class="icon1"></span>
+					<a href="#" class="a1">我的书海</a>
+					<span class="icon2"></span>
+					<ul class="icon2Hover">
+						<li>
+							<a href="#">我的订单</a>
+						</li>
+						<li>
+							<a href="#">信息修改及认证</a>
+						</li>
+						<li>
+							<a href="#">电子图书管理</a>
+						</li>
+						<li>
+							<a href="#">我的设置</a>
+						</li>
+					</ul>
+				</span>
+				<span>
+					<span class="icon3"></span>
+					<a href="#" class="a1">我的爱心值</a>
+				</span>
+				<span>
+					<a href="#">购买到的图书</a>
+				</span>
+				<span>
+					<span class="icon4"></span>
+					<a href="#" class="a1">上传图书</a>
+				</span>
+				<span>
+					<span class="icon4"></span>
+					<a href="#" class="a1">手机蒲公英</a>
+				</span>
+				
+				<span>
+					<a href="#">帮助中心</a>
+				</span>
+			</span>
+		</div>
+	</div>
+	<div id="box">
+		
+	
+    <form action="" class="seilBook-form">
+        <div class="box-input">
+            <label for="book-name" ><font size="3" color="">书籍名称：</font></label>
+            <input type="text" name="" id="" placeholder="请输入书籍名称"  style="width: 500px;height: 30px;">
+        </div>
+        <div class="box-input">
+            <label for="type"><font size="3" color="">所属分类：</font></label>
+            <select id="type"  style="width: 250px;height: 30px;">
+                <option>A.大学教辅书/教科书</option>
+                <option>B 课外书籍</option>
+                <option>C 中小学教辅书/教科书</option>
+                
+            </select>
+        </div>
+        <div class="box-input">
+            <label for="author"><font size="3" color="">书籍主编：</font></label>
+            <input type="text" name="author" id="author" placeholder="请输入书籍主编"  style="width: 500px;height: 30px;">
+        </div>
+        <div class="box-input">
+            <label for="press"><font size="3" color="">出版社名：</font></label>
+            <input type="text" name="press" id="press" placeholder="请输入出版社名"  style="width: 500px;height: 30px;">
+        </div>
+        <div class="box-input">
+            <label for="oriprice"><font size="3" color="">募捐对象：</font></label>
+            <select id="type"  style="width: 250px;height: 30px;">
+                <option>A.在校大学生</option>
+                <option>B.贫苦中小学</option>
+               
+            </select>
+        </div>
+        <!-- <div class="box-input">
+            <label for="price">二手售价：</label>
+            <input type="text" name="price" id="price" placeholder="请输入书籍名称"  style="width: 500px;height: 30px;">
+        </div> -->
+        <!-- <div class="box-input">
+            <label for="tel">联系电话：</label>
+            <input type="text" name="tel" id="tel" placeholder="请输入书籍名称"  style="width: 500px;height: 30px;">
+        </div> -->
+        <div class="box-input">
+            <label for="newDeg"><font size="3" color="">新旧程度：</font></label>
+            <select id="newDeg"  style="width: 250px;height: 30px;">
+                <option>几乎全新</option>
+                <option>轻微勾画</option>
+                <option>大量笔记</option>
+                <option>不影响阅读</option>
+            </select>
+        </div>
+        
+        <div class="box-input">
+            <label for="bookphoto"><font size="3" color="">上传照片（请上传书籍现状照片）：</font></label>
+            <div class="pic-file">
+                <input type="file" name="bookphoto" id="bookphoto" size="40">
+            </div>
+            <p id="tips" style="font-size:15px" ></p>
+        </div>
+        <!--       点击提交按钮弹出弹框提示提交成功-->
+		<div class="box-input">
+		    <label for="seilorText"><font size="3" color="">捐赠寄语：<span>(选填)</span></font></label>
+		    <textarea name="seilorText" id="seilorText" cols="100" rows="5"></textarea>
+		</div>
+        <input type="button" value="提交" id="submit" style="width: 250px;height: 30px;">
+    </form>
+	</div>
+</div>
+<script type="text/javascript">
+	var obtn = document.getElementById("submit")
+	obtn.onclick = function()
+	{
+		alert("提交成功")
+	}
+</script>
+</body>
+</html>
